@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+     
+} 
+.header{
+    min-height: 100vh;
+    width: 100%; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(images/HeaderImg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 6%;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.NavLinks li{
+    list-style: none;
+    display: inline-block;
+    margin: 3px 10px;
+}
+.NavLinks li a{
+    text-decoration: none;
+    color: black;
+}
+.RegisterBtn{
+    background: azure;
+    color: black;
+    padding: 8px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.logo{
+    padding: 0 7%;
+}
+.header h1 {
+    font-size: 12;
+    font-weight: 500;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 3%;
+}
+.SearchBar{
+    background: white;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+.SearchBar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.SearchBar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.SearchBar form button{
+    background: orange;
+    width: 50px;
+    height: 45px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.SearchBar form button img{
+    width: 40px;
+    margin-top: 3px;
+}
+.LocationInput{
+    flex: 1;
+
+}
+.SearchBar form label{
+    font-weight: 600;
+}
+.Subtitle{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    color: rgb(18, 227, 241);
+}
+
+/* ***********EXCLUSIVES*********** */
+.exclusives{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+.exclusives div img{
+    width: 100%;
+    border-radius: 10px;
+} 
+.exclusives div{
+    position: relative;
+}
+.exclusives div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: azure;
+}
+
+/* ***************TRENDING PLACES******** */
+
+.trending{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 10px;
+}
+
+.trending div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.trending h3{
+    font-weight: 600;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* ********** call to action******** */
+
+.cta{
+    margin: 80px, 0;
+    background-image: linear-gradient(to right, #6a130c, transparent), url(images/cta.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 5%;
+    color: #fff;
+}
+
+.cta h3{
+    font-size: 4vw;
+    line-height: 5vw;
+    font-weight: 600;
+}
+
+.cta p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.ctabtn{
+    background: #1bcad7;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* **********Travellers Stories********* */
+.subtitle2{
+    color: rgb(204, 193, 193);
+    padding-top: 30px ;
+}
+.stories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 10px;
+}
+
+.stories div img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.stories div{
+    position: relative;
+    text-align: center;
+}
+
+.stories p{
+    width: 80%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff ;
+    font-size: 20px;
+}
+
+.startbtn{
+    text-decoration: underline;
+    background: #2dc911;
+    color: white;
+    width: 80%;
+    max-width: 350px;
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 30px;
+    font-size: larger;
+}
+
+/* **********ABOUT*********** */
+
+.about{
+    margin: 80px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 18px;
+
+}
+
+.about h2{
+    font-size: 30px;
+    margin-bottom: 35px;
+    font-weight: 500 ;
+    color: antiquewhite;
+}
+
+/* ********footer********* */
+
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgb(231, 183, 128);
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.footer hr{
+    background: rgb(231, 183, 128);
+    height: 2px;
+    width: 100%;
+    border: 0px;
+    margin: 15px;
+}
+
+footer p{
+    padding-bottom: 15px;
+}
+
+.active{
+    position: relative;
+}
+
+.active::after{
+    content: '';
+    background: black;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -12px;
+    border-radius: 3px;
+
+}
+
+/* *******spaces list****** */
+
+.navbarwhite{
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+.navbarwhit .NavLinks li a{
+     color: #000;
+}
+
+.navbarwhite .RegisterBtn{
+    background: #ff5361;
+    color: white;   
+}
+
+.listContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.leftCol{
+    flex-basis: 70%;
+}
+
+.rightCol{
+    flex-basis: 25%;
+}
+
+.leftCol h1{
+    color: rgb(78, 63, 63);
+    font-weight: 500;
+    margin-bottom: 30px;
+
+}
+
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+
+.houseImg{
+    flex-basis: 40%;
+
+}
+
+.houseInfo{
+    flex-basis: 60%;
+    color: #825809;
+}
+
+.houseImg img{
+    width: 90%;
+    border-radius: 15px;
+
+}
+
+.houseInfo h3{
+    font-weight: 600;
+    color: #333;
+    font-size: 23px;
+    margin: 4px 0;
+}
+
+.houseInfo i{
+    color: orange;
+    font-size: 18px;
+    margin: 10px 2px;
+}
+
+.HousePrice{
+    text-align: right;
+
+}
+
+.HousePrice h4{
+    font-size: 22px;
+}
+
+.sidebar{
+    border: 1px solid #999;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+
+.sidebar h2{
+    font-weight: 500;
+
+}
+
+.sidebar h3{
+    text-decoration: underline;
+    font-weight: 500;
+    margin: 20px 0 10px;
+    
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    color: #ff5361;
+    margin-bottom: 10px;
+
+}
+
+.filter p{
+    flex: 1;
+}
+
+.filter input{
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.sidebarLink{
+    text-align: right;
+    margin: 20px 0;
+}
+
+.sidebarLink a{
+    text-decoration: underline;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.pagination img{
+    width: 15px;
+    margin: 10px 20px;
+}
+
+.rightArrow{
+    transform: rotate(180deg);
+}
+
+.pagination span{
+    margin: 10px 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pagination .currentPage{
+    background: #333;
+    color: white;
+
+}
+
+
+/* ********house details page*****  */
+
+.houseDetails{
+    padding: 0% 10%;
+}
+
+.housetitle{
+    margin-top: 50px;
+}
+
+.housetitle h1{
+    font-weight: 600;
+}
+
+.housetitle .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.housetitle span{
+    margin: 0 20px;
+}
+
+.housetitle i{
+    color: orange;
+    font-size: 15px;
+}
+
+.gallery{
+    display: flex;
+    grid-gap: 5px;
+    margin: 5px;
+    
+}
+
+.gallery img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+     
+}
+
+.smallDetails h2{
+    font-weight: 500;   
+}
+
+.smallDetails h4{
+    text-align: right;
+    font-size: 22px;
+}
+
+.line{
+    border: 0;
+    height: 1px;
+    background-color: #000;
+    width: 100%;
+    margin: 20px 0px 50px;
+    max-width: 800px;
+}
+
+.checkForm{
+    margin: 30px 0;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    border-radius : 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items : center;
+    padding: 10px 50px;
+}
+
+.checkForm label{
+    display: block;
+}
+
+.checkForm div{
+    padding: 20px;
+}
+
+.checkForm input{
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+.checkForm button{
+    background: rgb(21, 191, 162);
+    border: none;
+    padding: 18px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.detailsList{
+    list-style: none;
+    margin: 50px 0;
+}
+
+.detailsList li{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.detailsList li span{
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.homeDesc{
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.map {
+    margin: 50px 0;
+}
+
+.map iframe{
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
